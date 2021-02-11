@@ -8,7 +8,7 @@ public class NewSort {
         for (int i = 0; i < arr.length - 1; i++)  
         {  
             int index = i;  
-            for (int j = i + 1; j < arr.length; j++)
+            for (int j = i+1; j<arr.length; j++)
             {  
                 if (arr[j] < arr[index])
                 {  
@@ -25,20 +25,20 @@ public class NewSort {
 		Scanner input=new Scanner(System.in);
 		
 		System.out.println("Enter the size of array");
-		int N=input.nextInt();
+		int N = input.nextInt();
 		
 		System.out.println("Enter the values in array");
-		int arr[]=new int[N];
+		int arr[] = new int[N];
 		
-		for(int i=0;i<N;i++) 
+		for(int i=0; i<N; i++) 
 		{
-			arr[i]=input.nextInt();
+			arr[i] = input.nextInt();
 		}
 		 
         System.out.println("Before Selection Sort");  
         for(int i:arr)
         {  
-            System.out.print(i+" ");  
+            System.out.print(i + " ");  
         }  
         System.out.println();  
           
@@ -47,7 +47,7 @@ public class NewSort {
         System.out.println("After Selection Sort");  
         for(int i:arr)
         {  
-            System.out.print(i+" ");  
-            }  
+            System.out.print(i + " ");  
+        }  
         }
 	}
